@@ -1,0 +1,373 @@
+/* General Styling */
+body {
+    font-family: 'Arial', 'Helvetica', sans-serif;
+    background-color: #0f1336;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    /* max-width: 1200px; */ /* Remove or comment out this line */
+    margin: 0 auto;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+nav p span a {
+    text-decoration: none;
+    color:  #0f1336;
+    font-weight: bold;
+    padding: 0 15px;
+    font-size: 1.1em;
+}
+
+nav p span a:hover {
+    color: #c23f68;
+}
+
+
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: #0f1336;
+    padding: 40px 0; 
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1.2em; /* Slightly larger text size for better visibility */
+}
+
+
+/* Button Styling */
+button {
+    background-color: #5D001E; 
+    color: #FFFFFF; /*  for text */
+    padding: 10px 20px;
+    border: 2px solid #8B3A3A;
+    border-radius: 8px; /* Rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    font-family: 'Georgia', serif; 
+    font-size: 1em;
+}
+
+button:hover {
+    background-color: #8B3A3A; /* Muted Red on hover */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Subtle hover effect */
+    transform: translateY(-2px); /* Slight lift effect */
+}
+
+/* Image Styling */
+
+/* Ensure all images are of the same size */
+img {
+    width: 100%;
+    height: 400px; /* Enforce a uniform height */
+    object-fit: cover; /* Ensures images scale proportionally without stretching */
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional styling for a polished look */
+}
+
+/* If some images have unique dimensions, you can override them using classes */
+img.custom-size {
+    height: 300px; /* Example of overriding size for specific images */
+}
+
+/* Table Styling */
+
+td {
+    padding: 75px;
+    text-align: center;
+    
+    vertical-align: top;
+}
+
+h1, h2 {
+    color: #5D001E; /* Deep Burgundy */
+    font-family: 'Georgia', serif;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); /* Adds subtle depth */
+    margin: 20px 0;
+}
+
+h1 {
+    font-size: 3em; /* Larger size for main headings */
+}
+
+h2 {
+    font-size: 2em; /* Slightly smaller for subheadings */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    td {
+        display: block;
+        width: 100%;
+        text-align: left;
+    }
+}
+
+/* Login Form Styling */
+.login-container {
+    width: 400px;
+    margin: 50px auto;
+    background: #c0bfc7;
+    border: 1px solid #00000000;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px 30px;
+    text-align: center;
+}
+
+.login-container h2 {
+    font-size: 1.8rem;
+    color: #2e4053; /* Muted yet striking */
+    margin-bottom: 20px;
+}
+
+.login-container label {
+    display: block;
+    font-size: 1rem;
+    color: #333;
+    margin: 10px 0 5px;
+    text-align: left;
+}
+
+.login-container input[type="text"],
+.login-container input[type="email"],
+.login-container input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #a8a8a8;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.login-container input[type="text"]:focus,
+.login-container input[type="email"]:focus,
+.login-container input[type="password"]:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(141, 200, 156, 0.5);
+    outline: none;
+}
+
+.login-container button {
+    background-color: #5D001E;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.login-container button:hover {
+    background-color: #0056b3;
+    transform: scale(1.02);
+}
+
+.login-container button:active {
+    background-color: #004085;
+    transform: scale(0.98);
+}
+
+.login-container p {
+    margin-top: 15px;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.login-container p a {
+    color: #0a4381;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login-container p a:hover {
+    text-decoration: underline;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f1f1f1;
+}
+
+h3 {
+    color: #444;
+}
+
+fieldset {
+    background-color: #eee;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    width: 80%;
+    max-width: 400px;
+    margin: auto;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    background-color: #800000; /* Maroon color */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #a00000;
+}
+
+p {
+    margin-top: 20px;
+}
+
+a {
+    color: #8e8e9a;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.centered-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    background: #f1f1f1;
+    font-size: x-large;
+}
+
+nav {
+    background-color: #590909; /* Maroon background */
+    padding: 10px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+
+.rating {
+    font-size: 2em;
+    color: #ffd700; /* Gold color for stars */
+    text-align: center;
+    margin: 10px 0;
+}
+
+
+
+
+/* Contact Page Styling */
+.contact-header {
+    text-align: center;
+    padding: 20px;
+    color: #6a3333;
+}
+
+.header-img {
+    display: block;
+    margin: 0 auto 20px;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.contact-info {
+    width: 30%;
+    text-align: left;
+    color: #000000;
+}
+
+.contact-form {
+    width: 30%;
+}
+
+.contact-image {
+    width: 30%;
+}
+
+.contact-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Socials Styling */
+.socials {
+    text-align: center;
+    padding: 20px;
+    color: #dbd5d5;
+}
+
+.socials ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.socials li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.socials a {
+    color: #676565;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.socials a:hover {
+    color: #fdfdfd;
+}
+
+/* Responsive Design for Contact Page */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-info, .contact-form, .contact-image {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+
+
